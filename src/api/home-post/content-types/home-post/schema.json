@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_posts",
+  "info": {
+    "singularName": "home-post",
+    "pluralName": "home-posts",
+    "displayName": "home-post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
