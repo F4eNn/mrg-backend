@@ -374,8 +374,18 @@ export interface ApiHomePostHomePost extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
+    tytul: Attribute.String;
     slug: Attribute.String;
+    Opis_posta: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'custom';
+        }
+      >;
+    zdjecie_glowne: Attribute.Media & Attribute.Required;
+    galeria: Attribute.Media;
+    krotki_opis: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

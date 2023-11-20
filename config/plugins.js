@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
         contentTypes: {
           'home-post': {
             field: 'slug',
-            references: 'title',
+            references: 'tytul',
           },
         },
       },

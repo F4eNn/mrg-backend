@@ -12,11 +12,40 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "tytul": {
       "type": "string"
     },
     "slug": {
       "type": "string"
+    },
+    "Opis_posta": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "zdjecie_glowne": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "galeria": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "krotki_opis": {
+      "type": "text"
     }
   }
 }
