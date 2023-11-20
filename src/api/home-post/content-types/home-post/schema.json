@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-post",
     "pluralName": "home-posts",
-    "displayName": "home-post"
+    "displayName": "home-post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
+      "type": "string"
+    },
+    "slug": {
       "type": "string"
     }
   }
